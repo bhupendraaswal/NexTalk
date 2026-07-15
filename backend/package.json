@@ -1,0 +1,41 @@
+{
+  "name": "chatty-backend",
+  "version": "1.0.0",
+  "description": "Chatty - Real-time Chat Application Backend",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon -r dotenv/config src/index.js",
+    "prod": "node -r dotenv/config src/index.js"
+  },
+  "keywords": [
+    "chat",
+    "real-time",
+    "socket.io",
+    "nodejs",
+    "express"
+  ],
+  "author": "Chatty Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "4.21.1",
+    "express-rate-limit": "^6.7.0",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^7.8.4",
+    "mongoose-aggregate-paginate-v2": "^1.0.6",
+    "morgan": "^1.10.0",
+    "passport": "^0.6.0",
+    "request-ip": "^3.3.0",
+    "socket.io": "^4.8.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
